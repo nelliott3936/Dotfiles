@@ -1,0 +1,74 @@
+* {
+    font-family: Hurmit Nerd Font;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 1px 4px;
+    border: 4px;
+    color: #fade93;
+}
+
+window#waybar {
+    background-color: rgba(26, 30, 41, 0.5);
+
+}
+
+#memory {
+    background-color: #8e00da;
+    color: #000000;
+    padding-left: 7px;
+    padding-right: 6px;
+}
+
+#temperature {
+    background-color: #616fb0;
+    padding-left: 6px;
+    padding-right: 5px;
+}
+
+#cpu {
+    background-color: rgb(250, 122, 76);
+    padding-right: 6px;
+}
+
+#battery {
+    background-color: #6c8462;
+}
+
+#backlight {
+    background-color: #9aa021;
+    padding-right: 9px;
+}
+
+
+#workspaces {
+    color: #000000;
+    padding: 0px;
+    border-color: #000000;
+}
+
+#workspaces button {
+    color: #000000;
+    padding: 0px;
+    background-color: #869e18;
+}
+
+#workspaces button.active {
+    background-color: #697b19;
+}
+
+#workspaces button.urgent {
+    animation-name: red-to-maroon;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes red-to-maroon {
+    0% {
+        background-color: #ff0000;
+    }
+    100% {
+        background-color: #b30606;
+    }
+}

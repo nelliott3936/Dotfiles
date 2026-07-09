@@ -1,0 +1,77 @@
+{
+    "layer": "top",
+    "spacing": 6,
+    "reload_style_on_change": true,
+    "margin-top": 6,
+    "margin-right": 6,
+    "margin-left": 6,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "temperature",
+        "memory",
+        "cpu",
+        "backlight",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "battery": {
+        "interval": 10,
+        "states": {
+            "good": 100,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+         "<span color='#de0c0c'> </span>",
+         "<span color='#eb8f0c'> </span> ",
+         "<span color='#e7f51b'> </span>",
+         "<span color='#a6d722'> </span>",
+         "<span color='#51cb32'> </span>"]
+    },
+    "clock": {
+        "format": "{:%I:%M}",
+        "tooltip-format": "{:%A %B %d %Y} "
+    },
+    "cpu": {
+        "interval": 1,
+        "format":  "<span color='#377ae2'> </span><span color='#000000'>{usage}%</span>"
+    },
+    "memory": {
+        "interval": 1,
+        "format": "<span color='#f96679'> </span><span color='#000000'>{percentage}%</span>",
+        "tooltip-format": "{total}GiB used, {avail}GiB available"
+    },
+        "hyprland/workspaces": {
+        "format-icons": {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+	    }
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
+        "tooltip": false
+    },
+    "temperature": {
+        "format": " {temperatureF}°F",
+        "tooltip-format": "{temperatureF}° Fahrenheit"
+    },
+    "network": {
+        "tooltip-format": "{ifname}, IP: {ipaddr}"
+    }
+}
