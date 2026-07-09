@@ -72,6 +72,10 @@
         "tooltip-format": "{temperatureF}° Fahrenheit"
     },
     "network": {
-        "tooltip-format": "{ifname}, IP: {ipaddr}"
+        "tooltip-format-wifi": "({essid}) ip: {ipaddr}, {signalStrength}%",
+        "format-wifi": "<span color='#2679c3'> </span><span color='#000000'> {essid}</span>",
+        "format-disconnected": "<span color='#ff0000'> Disconnected</span>",
+        "format-ethernet": "<span color='#28c21f'>󰈀 </span><span color='#000000'> link speed: {linkSpeed}</span>",
+        "tooltip-format-ethernet": "({ifname}) ip: {ipaddr}"
     }
 }

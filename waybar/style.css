@@ -52,6 +52,16 @@ window#waybar {
     background-color: #869e18;
 }
 
+#network {
+    background-color: #ff52a0;
+    color: #000000;
+}
+
+#network.disconnected {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 #workspaces button.active {
     background-color: #697b19;
 }
