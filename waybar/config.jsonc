@@ -37,7 +37,15 @@
     },
     "clock": {
         "format": "{:%I:%M}",
-        "tooltip-format": "{:%A %B %d %Y} "
+        "tooltip-format": "{:%A %B %d %Y} \n {calendar}",
+        "calendar": {
+            "format": {
+                "months": "",
+                "weekdays": "<span color='#ffefd8'><u>{}</u></span>",
+                "today": "<span color='#ff1717'><b>{}</b></span>",
+                "days": "{}"
+            }
+        }
     },
     "cpu": {
         "interval": 1,
@@ -48,7 +56,7 @@
         "format": "<span color='#f96679'> </span><span color='#000000'>{percentage}%</span>",
         "tooltip-format": "{total}GiB used, {avail}GiB available"
     },
-        "hyprland/workspaces": {
+    "hyprland/workspaces": {
         "format-icons": {
 		"1": "1",
 		"2": "2",
