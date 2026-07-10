@@ -9,13 +9,15 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "tray",
         "temperature",
         "memory",
         "cpu",
         "backlight",
         "network",
         "battery",
-        "clock"
+        "clock",
+        "custom/swaync"
     ],
     "battery": {
         "interval": 10,
@@ -46,6 +48,10 @@
                 "days": "{}"
             }
         }
+    },
+    "custom/swaync": {
+        "on-click": "swaync-client -t",
+        "format": ""
     },
     "cpu": {
         "interval": 1,

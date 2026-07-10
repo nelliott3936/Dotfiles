@@ -9,7 +9,10 @@
 
 window#waybar {
     background-color: rgba(26, 30, 41, 0.5);
+}
 
+#tray {
+    background-color: #9c7259;
 }
 
 #memory {
@@ -17,6 +20,11 @@ window#waybar {
     color: #000000;
     padding-left: 7px;
     padding-right: 6px;
+}
+
+#custom-swaync {
+    background-color: #ff0000;
+    padding-right: 7px;
 }
 
 #temperature {
