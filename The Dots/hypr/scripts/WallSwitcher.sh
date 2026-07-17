@@ -33,6 +33,7 @@ while true; do
         
         # Execute your command, safely quoting the file path
         eval "hyprctl hyprpaper wallpaper ,$LAST_PICKED_FILE,fill"
+        eval "bash ~/.config/hypr/scripts/Color.sh \"$LAST_PICKED_FILE\""
         
         # Avoid tight-looping CPU meltdowns (adjust or remove if your command takes time)
         sleep 10 
